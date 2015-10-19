@@ -19,7 +19,7 @@ module IPIP
     end
 
     def locate_in_china?(ip)
-      self.find(ip)[:country].in?(%w[中国 本地])
+      self.find(ip)[:country].in?(%w[中国 本地 本机地址 局域网])
     end
   end
 
